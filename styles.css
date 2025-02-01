@@ -1,0 +1,144 @@
+/* General Reset */
+* {
+  margin: 0; /* Removes default margin */
+  padding: 0; /* Removes default padding */
+  box-sizing: border-box; /* Ensures padding and border are included in element's total width and height */
+}
+
+/* Body Styling */
+body {
+  font-family: Arial, sans-serif; /* Sets a clean, sans-serif font */
+  background-color: #add8e6; /* Light blue background */
+  color: black; /* Black text color */
+  display: flex; /* Enables flexbox layout */
+  justify-content: center; /* Centers content horizontally */
+  align-items: center; /* Centers content vertically */
+  height: 100vh; /* Full viewport height */
+  margin: 0; /* Removes default margin */
+}
+
+/* Game Section Styling */
+.game {
+  text-align: center; /* Centers text inside the game section */
+  background-color: white; /* White background for the game section */
+  padding: 20px; /* Adds padding inside the game section */
+  border-radius: 10px; /* Rounds the corners of the game section */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow around the game section */
+  width: 100%; /* Ensures the game section takes full width */
+  max-width: 400px; /* Sets a maximum width for the game section */
+}
+
+/* Title Styling */
+.title {
+  font-size: 2em; /* Sets the font size for the title */
+  margin-bottom: 20px; /* Adds space below the title */
+}
+
+/* Score Styling */
+.score {
+  display: flex; /* Enables flexbox layout */
+  justify-content: space-between; /* Distributes space between player and computer scores */
+  margin-bottom: 20px; /* Adds space below the score section */
+}
+
+.score h2 {
+  font-size: 1.2em; /* Sets the font size for the score headings */
+}
+
+.count {
+  font-size: 1.5em; /* Sets the font size for the score numbers */
+  font-weight: bold; /* Makes the score numbers bold */
+}
+
+/* Move Prompt Styling */
+.move {
+  font-size: 1.2em; /* Sets the font size for the move prompt */
+  margin-bottom: 10px; /* Adds space below the move prompt */
+}
+
+/* Moves Left Styling */
+.movesleft {
+  font-size: 1em; /* Sets the font size for the moves left text */
+  margin-bottom: 20px; /* Adds space below the moves left text */
+}
+
+/* Options Styling */
+.options {
+  display: flex; /* Enables flexbox layout */
+  justify-content: space-around; /* Distributes space evenly between the buttons */
+  margin-bottom: 20px; /* Adds space below the options section */
+}
+
+.options button {
+  background-color: #4caf50; /* Green background for buttons */
+  color: white; /* White text color for buttons */
+  border: none; /* Removes default border */
+  padding: 10px 20px; /* Adds padding inside the buttons */
+  font-size: 1em; /* Sets the font size for the buttons */
+  cursor: pointer; /* Changes cursor to pointer on hover */
+  border-radius: 5px; /* Rounds the corners of the buttons */
+  transition: background-color 0.3s; /* Adds a transition effect for background color
+  
+  Explanation:
+
+The .options button selector applies styles to the buttons, setting an initial green background color (#4CAF50).
+The transition property is set to background-color 0.3s ease, indicating that any change to the background-color property will transition smoothly over 0.3 seconds using the ease timing function.
+The .options button:hover selector changes the background color to a darker green (#45a049) when the button is hovered over.
+  */
+}
+
+.options button:hover {
+  background-color: #45a049; /* Darker green background on hover */
+}
+
+/* Result Styling */
+.result {
+  font-size: 1.2em; /* Sets the font size for the result text */
+  margin-bottom: 20px; /* Adds space below the result text */
+}
+
+/* Reload Button Styling */
+.reload {
+  background-color: #f44336; /* Red background for reload button */
+  color: white; /* White text color for reload button */
+  border: none; /* Removes default border */
+  padding: 10px 20px; /* Adds padding inside the reload button */
+  font-size: 1em; /* Sets the font size for the reload button */
+  cursor: pointer; /* Changes cursor to pointer on hover */
+  border-radius: 5px; /* Rounds the corners of the reload button */
+  transition: background-color 0.3s; /* Adds a transition effect for background color */
+}
+
+.reload:hover {
+  background-color: #e53935; /* Darker red background on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .game {
+    width: 90%; /* Sets the game section width to 90% on small screens */
+    padding: 15px; /* Reduces padding inside the game section */
+  }
+
+  .title {
+    font-size: 1.5em; /* Reduces font size for the title */
+  }
+
+  .score h2,
+  .count,
+  .move,
+  .movesleft,
+  .result {
+    font-size: 1em; /* Reduces font size for various text elements */
+  }
+
+  .options button {
+    padding: 8px 16px; /* Reduces padding inside the buttons */
+    font-size: 0.9em; /* Reduces font size for the buttons */
+  }
+
+  .reload {
+    padding: 8px 16px; /* Reduces padding inside the reload button */
+    font-size: 0.9em; /* Reduces font size for the reload button */
+  }
+}
